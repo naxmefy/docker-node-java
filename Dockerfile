@@ -32,7 +32,7 @@ ENV PATH ${JAVA_HOME}/bin:$PATH
 RUN java -version
 
 ENV NVM_DIR /usr/local/nvm
-ENV NODE_VERSION 4.2.4
+ENV NODE_VERSION 7.10.0
 
 # Install nvm with node and npm
 RUN curl https://raw.githubusercontent.com/creationix/nvm/v0.30.1/install.sh | bash \
@@ -49,4 +49,4 @@ RUN node --version
 # Define working directory.
 WORKDIR /data
 
-CMD ["bash"]
+ENV USER=root
