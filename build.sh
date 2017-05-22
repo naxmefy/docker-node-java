@@ -6,5 +6,5 @@ docker build \
     --build-arg no_proxy=$NO_PROXY \
     --build-arg NO_PROXY=$NO_PROXY \
     -q=false \
-    -t node-java \
+    -t naxmefy/node-java \
     .
